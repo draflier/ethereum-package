@@ -64,8 +64,6 @@ def launch_mev_sidecar(
                 "0..64",
                 "--slot-time",
                 str(seconds_per_slot),
-                "--metrics-port",
-                str(MEV_SIDECAR_METRICS_PORT),
             ],
             # + mev_params.mev_relay_api_extra_args,
             ports={
