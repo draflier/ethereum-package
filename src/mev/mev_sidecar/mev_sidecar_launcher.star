@@ -73,9 +73,6 @@ def launch_mev_sidecar(
                 "mevboost-proxy": PortSpec(
                     number=MEV_SIDECAR_BOOST_PROXY_PORT, transport_protocol="TCP"
                 ),
-                "metrics": PortSpec(
-                    number=MEV_SIDECAR_METRICS_PORT, transport_protocol="TCP"
-                ),
             },
             env_vars=env_vars,
             min_cpu=MEV_SIDECAR_MIN_CPU,
